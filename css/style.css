@@ -1,27 +1,18 @@
-/* change these */
-
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400italic,800italic,400,800");
-/* @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap'); */
-@import url("https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic");
-
+  @import url("https://use.typekit.net/asj6svz.css");
+  @import url("https://use.typekit.net/asj6svz.css");
 * {
   box-sizing: border-box;
 }
 
-/* THIS IS ALL meant for editing. You might want to do it differently, 
-name the variables differently, 
-use the fonts in other ways in the font hierarchy etc. */
-
-/* change these */
 :root {
-  --bg-color: red;
-  --link-color: green;
-  --link-hover-color: blue;
-  --color-4: hotpink;
-  --color-5: rebeccapurple;
+  --bg-color: #afad94;
+  --link-color: #004FF5;
+  --link-hover-color: #B1EB46;
+  --color-4: black;
+  --color-5: rgb(211, 209, 209);
 
-  --primary-font: "Open Sans", sans-serif;
-  --secondary-font: "Droid Serif", serif;
+  --primary-font: "forma-djr-display", sans-serif;
+  --secondary-font: "essonnes-text", serif;
   --main-text-color: #000;
 
   --white-space: 1rem;
@@ -35,7 +26,7 @@ a {
 }
 button:hover {
   background-color: var(--link-hover-color);
-  transform: scale(3) rotate(40deg);
+  transform: scale(1.5);
 }
 
 button:active {
@@ -44,11 +35,13 @@ button:active {
 
 a:hover {
   color: var(--link-hover-color);
-  font-size: 4rem;
+  font-size: 1.2rem;
 }
 html {
   font-size: 100%;
   font-family: var(--primary-font);
+  font-weight: 700;
+  font-style: italic;
 }
 
 img {
@@ -65,7 +58,7 @@ footer {
 }
 
 .full-width {
-  background: var(--bg-color);
+  background: var(--color-4);
   color: white;
   width: 100%;
 }
@@ -81,7 +74,7 @@ footer {
 
 .header-wrapper h2 {
   font-size: 1.6em;
-  color: rgba(255, 255, 255, 0.95);
+  color: var(--bg-color);
   font-weight: bold;
   margin: var(--white-space) 0;
 }
@@ -89,10 +82,13 @@ footer {
 .header-wrapper h3 {
   font-size: 1.2rem;
   font-style: italic;
+  color: var(--link-color);
 }
 
 .header-wrapper h4 {
   font-size: 0.8rem;
+  color: var(--link-color);
+
 }
 
 main {
@@ -104,7 +100,6 @@ section {
 }
 
 .section-heading {
-  font-style: italic;
   font-size: 1.3rem;
   color: #777;
   margin: 0.5rem 0;
@@ -146,25 +141,23 @@ ul li:last-child {
 }
 
 .textures li {
-  height: 30vw;
-  width: 40%;
+  height: 100%;
+  width: 100%;
   margin-right: 5vw;
 }
 
-.texture-swatch-1 {
-  background: url(../img/pw_maze_white.png) top left repeat;
-}
+
 
 .texture-swatch-2 {
-  background: url(../img/subtle_grunge.png) top left repeat;
+  background: url(https://i.pinimg.com/564x/4d/52/e4/4d52e4cc8095c745dcf821c1ed568f78.jpg) top left repeat;
 }
 
 .texture-swatch-1 {
-  background: url(../img/pw_maze_white.png) top left repeat;
+  background: url(https://i.pinimg.com/564x/55/14/2c/55142c79145d726d85e88cedb9655b66.jpg) top left repeat;
 }
 
 .texture-swatch-3 {
-  background: url(../img/white_paperboard.png) top left repeat;
+  background: url(https://i.pinimg.com/564x/1c/6b/4d/1c6b4dab0b464988e1231cab5410fd17.jpg) top left repeat;
 }
 
 .images ul {
@@ -174,13 +167,11 @@ ul li:last-child {
 
 .images li {
   display: block;
-  /*margin-right: 5vw;*/
   margin-bottom: 1rem;
 }
 
 button {
   padding: 1rem;
-  border-radius: 4px;
   background: var(--link-color);
   text-align: center;
   text-decoration: none;
@@ -188,7 +179,6 @@ button {
   letter-spacing: 1px;
   color: white;
   text-transform: uppercase;
-  text-shadow: 0px -1px 0px #0374a0;
   transition: all 0.2s ease;
   cursor: pointer;
   margin: 0 1rem 1rem 0;
@@ -202,7 +192,6 @@ button:focus,
 button:active,
 button:focus-within {
   outline: 0;
-  border-radius: 4px;
 }
 
 .typography-main {
@@ -216,14 +205,18 @@ button:focus-within {
 
 .h2-sample {
   font-family: var(--secondary-font);
-  font-style: italic;
-  font-size: 1.25rem;
+  color: var(--link-hover-color);
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-style: normal;
 }
 
 p.typography-sample {
   font-family: var(--secondary-font);
   line-height: 1.5;
   max-width: 960px;
+  font-weight: 400;
+  font-style: normal;
 }
 
 strong {
@@ -248,6 +241,8 @@ p[class*="font-details-"] {
   font-size: 0.75rem;
   font-family: var(--secondary-font);
   color: #6f6f6f;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .adjectives ul {
@@ -261,6 +256,8 @@ p[class*="font-details-"] {
 
 footer {
   font-style: italic;
+  text-align: center;
+  color: var(--link-hover-color);
 }
 
 @media (min-width: 800px) {
