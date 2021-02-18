@@ -146,6 +146,10 @@ ul li:last-child {
   margin-right: 5vw;
 }
 
+h1 {
+  text-decoration: none;
+}
+
 
 
 .texture-swatch-2 {
